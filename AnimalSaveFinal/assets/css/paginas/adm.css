@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar header {
+  margin-bottom: 30px;
+}
+
+.sidebar h2 {
+  font-family: 'Delius', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar .menu li {
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.sidebar .menu li:hover {
+  background-color: #005bbf;
+}
+
+/* Dropdown usuário */
+.dropbtn {
+  background-color: #fff;
+  color: #007bff;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background-color: #005bbf;
+  color: white;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 260px;
+  padding: 30px 40px;
+  width: calc(100% - 260px);
+}
+
+/* Títulos de seção */
+.main-content h2 {
+  font-family: 'Delius', cursive;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Tabelas */
+table.dataTable {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table.dataTable th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+table.dataTable td {
+  padding: 10px;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Botões */
+button,
+.btn {
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  border: none;
+}
+
+/* Cards do painel */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h5 {
+  font-family: 'Delius', cursive;
+}
+
+.card-resumo {
+  border-left: 4px solid #007bff;
+  transition: transform 0.3s ease;
+}
+
+.card-resumo:hover {
+  transform: translateY(-5px);
+}
+
+/* Relatório */
+#conteudo-relatorio {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Status badge */
+.badge {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .dropbtn {
+    width: 100%;
+  }
+}

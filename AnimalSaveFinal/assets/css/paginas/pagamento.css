@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Delius', cursive;
+  color: #003366;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos do formulário */
+.form-label {
+  font-weight: bold;
+  color: #003366;
+}
+
+.form-select, .form-control {
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.form-select:focus, .form-control:focus {
+  border-color: #007bff;
+  box-shadow: none;
+}
+
+/* Botão */
+button[type="submit"], .btn-outline-secondary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover,
+.btn-outline-secondary:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.logo-centralizada {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 120px;
+    height: auto;
+}
+
+/* Pix QR Code */
+.qrcode {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #007bff;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/* Informações do agendamento */
+.mb-3 strong {
+  color: #007bff;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Mensagens de erro */
+.input-error {
+  border-color: #dc3545 !important;
+}
+
+.error-message {
+  font-size: 0.9rem;
+  color: #dc3545;
+  margin-top: 5px;
+}
+
+/* Pix Key + botão copiar */
+#pix-key {
+  font-weight: bold;
+  color: #333;
+  background-color: #f1f3f5;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
